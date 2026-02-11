@@ -602,18 +602,27 @@
         /* CONTACT */
         .contact-section {
             background: var(--color-bg);
-            text-align: center;
         }
 
         .contact-section .section-inner {
-            max-width: 600px;
+            max-width: 900px;
+        }
+
+        .contact-section .section-label,
+        .contact-section .section-title {
+            text-align: center;
+        }
+
+        .contact-layout {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
         }
 
         .contact-image {
-            width: 100%;
-            max-width: 700px;
+            width: 50%;
+            flex-shrink: 0;
             height: auto;
-            margin-bottom: 3rem;
             opacity: 0.85;
             border-radius: 2px;
             transition: opacity 0.5s ease;
@@ -624,7 +633,7 @@
         }
 
         .contact-info {
-            margin-top: 2rem;
+            flex: 1;
         }
 
         .contact-info p {
@@ -839,6 +848,18 @@
                 letter-spacing: 0.15em;
             }
 
+            .contact-layout {
+                flex-direction: column;
+            }
+
+            .contact-image {
+                width: 100%;
+            }
+
+            .contact-info {
+                text-align: center;
+            }
+
             .closing-section {
                 padding: 8rem 1.5rem;
             }
@@ -1014,14 +1035,16 @@
             <p class="section-label">Contact</p>
             <h2 class="section-title">Get in Touch</h2>
 
-            <img class="contact-image" src="../assets/img/winery-building-khashmi.png" alt="Tvaliashvili Winery building in Khashmi" loading="lazy">
+            <div class="contact-layout">
+                <img class="contact-image" src="../assets/img/winery-building-khashmi.png" alt="Tvaliashvili Winery building in Khashmi" loading="lazy">
 
-            <div class="contact-info fade-in">
-                <p style="color: var(--color-white); font-size: 1.1rem; margin-bottom: 1.5rem;">TerraFilia LLC</p>
-                <p>Khashmi, Kakheti, Georgia</p>
-                <div class="divider divider-center"></div>
-                <p>Email: <a href="mailto:contact@terrafilia.ge">contact@terrafilia.ge</a></p>
-                <p>Phone: <a href="tel:+995555147799">+995 555 14 77 99</a></p>
+                <div class="contact-info fade-in">
+                    <p style="color: var(--color-white); font-size: 1.1rem; margin-bottom: 1.5rem;">TerraFilia LLC</p>
+                    <p>Khashmi, Kakheti, Georgia</p>
+                    <div class="divider"></div>
+                    <p>Email: <a href="mailto:contact@terrafilia.ge">contact@terrafilia.ge</a></p>
+                    <p>Phone: <a href="tel:+995555147799">+995 555 14 77 99</a></p>
+                </div>
             </div>
         </div>
     </section>
