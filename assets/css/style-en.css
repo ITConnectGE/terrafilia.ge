@@ -198,10 +198,40 @@ nav.scrolled {
 }
 
 .social-icon {
-    width: 1em;
-    height: 1em;
-    vertical-align: -0.1em;
-    margin-right: 0.3em;
+    width: 0.75em;
+    height: 0.75em;
+    vertical-align: -0.05em;
+    margin-right: 0.2em;
+}
+
+.contact-detail a[target="_blank"] {
+    text-decoration: none !important;
+}
+
+.contact-detail a[target="_blank"]::after {
+    display: none !important;
+}
+
+.footer-social {
+    margin: 1rem 0;
+}
+
+.footer-social a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: var(--color-text-light);
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: var(--color-accent-light);
+}
+
+.footer-social svg {
+    width: 100%;
+    height: 100%;
 }
 
 .nav-hamburger {
@@ -869,6 +899,24 @@ footer p {
     font-size: 0.75rem;
     letter-spacing: 0.15em;
     color: var(--color-text-light);
+}
+
+.footer-credit {
+    margin-top: 0.8rem;
+    font-size: 0.65rem !important;
+    color: var(--color-text-light);
+    opacity: 0.5;
+}
+
+.footer-credit a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-credit a:hover {
+    color: var(--color-accent-light);
+    opacity: 1;
 }
 
 /* ANIMATIONS */
